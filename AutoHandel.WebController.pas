@@ -3,40 +3,32 @@ unit AutoHandel.WebController;
 interface
 
 uses
-  System.SysUtils, System.Classes;
+  Web.HTTPApp;
 
 type
-  TWebController = class
+  TWebModule1 = class(TWebModule)
   private
-    FCurrentState: string;
+    FDatabaseConnection: TObject; // Placeholder for database connection
   public
-    constructor Create;
-    procedure StartWorkflow;
-    procedure TransitionTo(const ANewState: string);
-    function GetCurrentState: string;
+    function GetOrders(ARequest: TWebRequest): string;
+    procedure AddOrder(ARequest: TWebRequest);
   end;
 
 implementation
 
-constructor TWebController.Create;
+{%CLASSGROUP 'Vcl.Controls.TControl'}
+
+{%R *.xlf}
+
+function TWebModule1.GetOrders(ARequest: TWebRequest): string;
 begin
-  FCurrentState := 'Initial'; // Default starting state
+  // Logic to retrieve and return orders from the database
+  Result := 'Order list';
 end;
 
-procedure TWebController.StartWorkflow;
+procedure TWebModule1.AddOrder(ARequest: TWebRequest);
 begin
-  FCurrentState := 'Workflow Started';
-end;
-
-procedure TWebController.TransitionTo(const ANewState: string);
-begin
-  // Add your state transition logic here
-  FCurrentState := ANewState;
-end;
-
-function TWebController.GetCurrentState: string;
-begin
-  Result := FCurrentState;
+  // Logic to add a new order to the database
 end;
 
 end.
