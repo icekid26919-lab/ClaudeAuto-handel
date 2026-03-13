@@ -1,0 +1,36 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{57C6A6A9-9E46-494E-8B12-92BE808B499E}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="AutohandelClaude.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="AutohandelClaude">
+        <MSBuild Projects="AutohandelClaude.dproj"/>
+    </Target>
+    <Target Name="AutohandelClaude:Clean">
+        <MSBuild Projects="AutohandelClaude.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="AutohandelClaude:Make">
+        <MSBuild Projects="AutohandelClaude.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="AutohandelClaude"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="AutohandelClaude:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="AutohandelClaude:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

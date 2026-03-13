@@ -1,0 +1,148 @@
+Bitte bau mir 
+
+
+
+
+Eine Delphi Applikation für den Bereich Gebrauchtwagen Autohandel
+
+
+
+
+als Datenschicht soll eine Cloud basierte Maria DB  dienen 
+
+
+
+
+Alle Formen sollen nach dem MVVM Pattern steuerbar sein. So dass auch Units Test für die einzelnen grafischen Elemente möglich sind. 
+
+
+
+
+Zudem soll eine Dokumentation und grafische Architektur der einzelnen Komponenten erstellt werden. Gerne auch eine ai Beschreibung der Architektur umgegeben falls eine neu Generierung nach Änderungen zu ermöglichen 
+
+
+
+
+Für alle Business Cases sollen auch entsprechende Units Tests erstellt werden. Nach Möglichkeit sollen alle Business Cases als State Maschine umgesetzt werden. Jeder State soll als Implementation eines Interfaces für den Workflow des Buissnes Cases  sein 
+
+
+
+
+erstelle auch einsprechende Datenbank Strukturen für die Buissnes Cases sowie Stammdaten und  Business Cases States 
+
+
+
+
+Die Applikation umfasst folgende Business Cases umfassen
+
+
+
+
+<Buissnescase  id= "Autoverkauf">
+
+
+
+
+Dazu muss es eine Möglichkeit geben Autos anhand von Merkmalen die Preis, Automarke, Modelle, Ausstattungsmerkmale, Kilometerstand, Garantien, Rabatte, Zuschüsse zu filtern. Nach dem filtern muss eine Listenübersicht  erscheinen  die nach dem Filtern erscheint. Die ein Miniatur Bild des Autos zeigt sowie die wichtigsten Merkmale die Preis, Modellname, Kilometerstand. Es müsste in der Liste Übersicht aber auch noch die Möglichkeit geben eine teilsuche zu  machen das heißt dass Matches die vielleicht nur Teile der Filtereigenschaften erfüllt haben auch angezeigt werden. Absteigend nach fehlenden Eigenschaften.
+
+
+
+
+Jeder Eintrag in der Liste müsste dann entsprechend aus wählbar sein und zu einer Detailansicht führen welche dann alle Daten des entsprechenden Eintrags anzeigt so wie die Möglichkeit bieten soll den Kauf oder eine Probefahrt oder Besichtigungstermin zu ermöglichen. 
+
+
+
+
+Kauf oder eine Probefahrt oder Besichtigungstermin haben folgende gleiche Elemente. Eine Terminierung für den entsprechenden Zweck. Die Möglichkeit einer Routenplanung zur Verkaufsstelle über Open Street View. Sofern vorhanden auch eine Möglichkeit des digitalen Besuches über eine Live Übertragung eines Mitarbeiters. (Mitarbeiter) müssen in der Lage sein Termine zu bestätigen und im Falle der Probefahrten soll noch eine  Sicherheitsabfrage den Mitarbeiter zwingen die Fahr Erlaubnis und Angaben des Interessenten zu überprüfen. Zudem soll der Mitarbeiter dem Kunden ein Angebot zusenden könne.
+
+   
+
+Der Kauf Business Case hätte dann das weitere dass dort die Möglichkeit besteht eine Schufa Auskunft Dokumente übergeben werden können. Zudem weitere verifizierungsschritte z.B. die Überprüfung der Angaben des Käufers per Postident  sowie Angaben zur Bankverbindungen möglich sind. Nachdem alle verifizierungsschritte(Schufa, Postident, und Bankauskünfte) positiv ausfallen soll für den Käufer eine E-Mail mit dem Kaufvertrag mit Angaben zum Auto zum Käufer zum Übergabeort über vermittelt werden. (Mitarbeiter) Nach einer Manuellen Verifizierung des Kaufvertrages und der Eingang des Vereinbarten Kaufpreis, müssen Schlüssel Übergabe, Quittung sowie die Digitalisierung des Kauf Vertrages festgehalten werden
+
+</Buissnescase>
+
+
+
+
+<Buissnescase id= "Autoankauf" >
+
+Füge alle sinnvollen Funktionen des  Buissnes Case autoverkauf hinzu die auch bei einen Autoankauf  sinn machen.  Füge noch dazu das eine vorgelagerte Digitale Schätzung anhand des Zustandes des Autos zustand, Ausstattung  und allen andern sinnvollen Faktoren erfolgen kann. sowie die Pflicht den wagen nochmal vorzuführen.
+
+</Buissnescase>
+
+
+
+
+<Buissnescase id= "Auto Leasing" >
+
+Füge alle sinnvollen Funktionen des Buissnes Case autoverkauf hinzu die auch bei einen Auto Leasing sinn machen.  Füge noch Systeme hinzu um  die Monatlichen Eingänge und an/end Zahlungen zu verwalten. zudem passe die Verträge entsprechend an  
+
+</Buissnescase>
+
+
+
+
+<Buissnescase id= "Auto Reparaturen/ Modifikationen/ Wartungen " >
+
+Füge alle sinnvollen Funktionen des Buissnes Case autoverkauf hinzu die auch bei einen Auto Reparaturen sinn machen. Zudem brauchen wir eine Verwaltung von Werkstatt Termine. Ersatz teil Bestellungen und   Lagerung Verwaltung für häufigen Ersatzteile. Organisation von Kunden Terminen. Diagnosen der Mechaniker. Schätzungen  der Kosten und  somit Angebots Erstellungen an den  Kunden sowie eine  Rechnungsstellung. Und dann  ggf ob dieses an den Kunden geht oder als  Garantiefall abgewickelt wird    
+
+</Buissnescase>
+
+   
+
+
+
+
+
+
+
+     
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

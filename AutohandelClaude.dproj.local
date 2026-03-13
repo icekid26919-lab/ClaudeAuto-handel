@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>1899.12.30 00:00:00.000.026,=C:\Users\Anwender\Documents\Embarcadero\Studio\Projekte\Unit1.pas</Transaction>
+    <Transaction>2026.03.13 22:05:43.412,=C:\Users\Anwender\Documents\Embarcadero\Studio\Projekte\Unit1.pas</Transaction>
+    <Transaction>2026.03.13 22:17:54.166,=C:\Users\Anwender\Downloads\Claude autohandel\AutoHandel.BusinessCase.Verkauf.pas</Transaction>
+    <Transaction>2026.03.13 22:17:54.185,=C:\Users\Anwender\Downloads\Claude autohandel\AutoHandel.Interfaces.pas</Transaction>
+    <Transaction>2026.03.13 22:17:54.204,=C:\Users\Anwender\Downloads\Claude autohandel\AutoHandel.Models.pas</Transaction>
+    <Transaction>2026.03.13 22:17:54.237,=C:\Users\Anwender\Downloads\Claude autohandel\AutoHandel.StateMachine.pas</Transaction>
+    <Transaction>2026.03.13 22:17:54.255,=C:\Users\Anwender\Downloads\Claude autohandel\AutoHandel.Tests.pas</Transaction>
+    <Transaction>2026.03.13 22:17:54.274,=C:\Users\Anwender\Downloads\Claude autohandel\AutoHandel.ViewModel.Verkauf.pas</Transaction>
+    <Transaction>2026.03.13 22:19:05.448,C:\Users\Anwender\Downloads\Claude autohandel\AutohandelClaude.dproj=C:\Users\Anwender\Documents\Embarcadero\Studio\Projekte\Project1.dproj</Transaction>
+  </Transactions>
+</BorlandProject>
